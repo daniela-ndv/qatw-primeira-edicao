@@ -2,7 +2,7 @@
 
 Este é um repositório de estudos da QA Tech Week, um evento de aprendizado guiado por [Fernando Papito](https://fernandopapito.com.br/)! 🚀
 
-Aqui você encontrará as instruções para configurar o ambiente, subir os serviços necessários e rodar os testes automatizados com Playwright.
+Aqui você encontrará as instruções para configurar o ambiente, subir os serviços necessários, realizar os acessos e rodar os testes automatizados com Playwright.
 
 ## 📌 Pré-requisitos
 Antes de começar, certifique-se de ter os seguintes softwares instalados em seu sistema:
@@ -16,14 +16,6 @@ Antes de começar, certifique-se de ter os seguintes softwares instalados em seu
 - [Windows](https://dev.to/papitofernando/instalando-o-docker-no-windows-10-home-ou-professional-com-wsl-2-26m3)
 - [MacOS](https://docs.docker.com/desktop/setup/install/mac-install/)
 - [Linux Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-
-## 🚀 Configuração do Ambiente
-1. Faça um Fork do projeto
-2. Clone este repositório:
-   ```sh
-   git clone git@github.com:seu-usuario/qatw-primeira-edicao.git
-   cd qatw-primeira-edicao
-   ```
    
 ## 🐳 Subindo o Ambiente com Docker Compose
 O projeto utiliza Docker Compose para gerenciar os serviços necessários para os testes.
@@ -41,6 +33,17 @@ O projeto utiliza Docker Compose para gerenciar os serviços necessários para o
    ```sh
    docker-compose down
    ```
+
+## 📩Servidor de e-mail para teste
+ - mailtrap.io
+
+## Usuário usado para fazer login em paybank-mf-auth:3000/
+- CPF: 00000014141
+- Senha: 147258
+
+## Configurar o host
+- Acessar C:\Windows\System32\drivers\etc\hosts
+- Configurar os hosts de acordo com o arquivo utils\hosts desse repositório.
 
 ## 🧪 Executando os Testes com Playwright
 
@@ -66,4 +69,4 @@ Este projeto está sob a licença MIT.
 
 ----
 
-### [Copyright 2025 por Fernando Papito, no GitHub](https://github.com/ComunidadeTechQA/qatw-primeira-edicao?tab=readme-ov-file).
+#### [Adaptado de github.com/ComunidadeTechQA/qatw-primeira-edicao, por Fernando Papito](https://github.com/ComunidadeTechQA/qatw-primeira-edicao?tab=readme-ov-file).
