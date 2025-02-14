@@ -2,7 +2,7 @@
 
 Este é um repositório de estudos da QA Tech Week, um evento de aprendizado guiado por [Fernando Papito](https://fernandopapito.com.br/)!
 
-Nesse evento, serão abordados conceitos e tecnologias para **testar um sistema de autenticação em uma arquitetura de microsserviços**. Neste repositório, há as instruções para configurar o ambiente, subir os serviços necessários, realizar os acessos e rodar os testes automatizados com Playwright.
+Nesse evento, serão abordados conceitos e tecnologias para **testar um sistema de autenticação em uma arquitetura de microsserviços**, com a execução de testes manuais, automação de testes de regressão e integração. 
 
 ## 💻 Tecnologias utilizadas: 
 - Javascript
