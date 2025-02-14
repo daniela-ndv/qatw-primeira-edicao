@@ -1,23 +1,27 @@
 # QA Tech Week - Primeira Edição
 
-Este é um repositório de estudos da QA Tech Week, um evento de aprendizado guiado por [Fernando Papito](https://fernandopapito.com.br/)! 🚀
+Este é um repositório de estudos da QA Tech Week, um evento de aprendizado guiado por [Fernando Papito](https://fernandopapito.com.br/)!
 
-Aqui você encontrará as instruções para configurar o ambiente, subir os serviços necessários, realizar os acessos e rodar os testes automatizados com Playwright.
+Nesse evento, serão abordados conceitos e tecnologias para **testar um sistema de autenticação em uma arquitetura de microsserviços**. Neste repositório, há as instruções para configurar o ambiente, subir os serviços necessários, realizar os acessos e rodar os testes automatizados com Playwright.
 
-## 📌 Pré-requisitos
-Antes de começar, certifique-se de ter os seguintes softwares instalados em seu sistema:
+## 💻 Tecnologias utilizadas: 
+- Javascript
+- Playwright
+- Docker
+- Alure Reports
+- Slack
+- Node.js
+- Redis
+- PostgreSQL
+- Jenkins
 
+### ✅ Pré-requisitos
 - [Git for Windows](https://gitforwindows.org/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Node.js (versão LTS)](https://nodejs.org/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-## 🐋 Guia de Instalação do Docker
-- [Windows](https://dev.to/papitofernando/instalando-o-docker-no-windows-10-home-ou-professional-com-wsl-2-26m3)
-- [MacOS](https://docs.docker.com/desktop/setup/install/mac-install/)
-- [Linux Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-   
-## 🐳 Subindo o Ambiente com Docker Compose
+### 🐋 Subindo o Ambiente com Docker Compose
 O projeto utiliza Docker Compose para gerenciar os serviços necessários para os testes.
 
 1. Certifique-se de que o Docker Desktop está em execução.
@@ -34,18 +38,18 @@ O projeto utiliza Docker Compose para gerenciar os serviços necessários para o
    docker-compose down
    ```
 
-## 📩Servidor de e-mail para teste
+### 📩 Servidor de e-mail para teste
  - mailtrap.io
 
-## Usuário usado para fazer login em paybank-mf-auth:3000/
+### 🧑‍💻 Usuário usado para fazer login em paybank-mf-auth
 - CPF: 00000014141
 - Senha: 147258
 
-## Configurar o host
+### 🌐 Configurar o host
 - Acessar C:\Windows\System32\drivers\etc\hosts
 - Configurar os hosts de acordo com o arquivo utils\hosts desse repositório.
 
-## 🧪 Executando os Testes com Playwright
+### 🎭 Executando os Testes com Playwright
 
 1. Instale as dependências do Playwright:
    ```sh
@@ -63,9 +67,6 @@ O projeto utiliza Docker Compose para gerenciar os serviços necessários para o
    ```sh
    npx playwright test --ui
    ```
-
-## 📄 Licença
-Este projeto está sob a licença MIT.
 
 ----
 
