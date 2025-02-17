@@ -16,10 +16,10 @@ Nesse evento, serão abordados conceitos e tecnologias para **testar um sistema 
 - Jenkins
 
 ### ✅ Pré-requisitos
-- [Git for Windows](https://gitforwindows.org/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Node.js (versão LTS)](https://nodejs.org/)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- Git for Windows
+- Visual Studio Code
+- Node.js (versão LTS)
+- Docker Desktop
 
 ### 🐋 Subindo o Ambiente com Docker Compose
 O projeto utiliza Docker Compose para gerenciar os serviços necessários para os testes.
@@ -41,7 +41,7 @@ O projeto utiliza Docker Compose para gerenciar os serviços necessários para o
 ### 📩 Servidor de e-mail para teste
  - mailtrap.io
 
-### 🧑‍💻 Usuário usado para fazer login em paybank-mf-auth
+### 🧑‍💻 Usuário usado para fazer login em mf-auth
 - CPF: 00000014141
 - Senha: 147258
 
