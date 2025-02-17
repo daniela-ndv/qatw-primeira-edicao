@@ -18,7 +18,7 @@ Nesse evento, serão abordados conceitos e tecnologias para **testar um sistema 
 ### ✅ Pré-requisitos
 - Git for Windows
 - Visual Studio Code
-- Node.js (versão LTS)
+- Node.js
 - Docker Desktop
 
 ### 🐋 Subindo o Ambiente com Docker Compose
