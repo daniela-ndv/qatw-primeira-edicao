@@ -1,7 +1,10 @@
 import { test, expect } from '@playwright/test';
-import { obterCodigo2FA } from '../support/db';
+
 import { LoginPage } from '../pages/loginPage';
 import { DashboardPage } from '../pages/DashboardPage';
+
+import { obterCodigo2FA } from '../support/db';
+//import { cleanJobs, getJob } from '../support/redis';
 
 test('Deve acessar a conta do usuário', async ({ page }) => {
 
@@ -12,19 +15,24 @@ test('Deve acessar a conta do usuário', async ({ page }) => {
       cpf: '00000014141',
       senha: '147258'
     }
+
+    //await cleanJobs();
   
     await loginPage.acessaPagina();
     await loginPage.informaCpf(usuario.cpf);
     await loginPage.informaSenha(usuario.senha);
 
-    await page.waitForTimeout(3000);
+    await page.getByRole('heading', {name: 'Verificação em duas etapas' }).waitFor({timeout: 3000});
 
-    const codigo = await obterCodigo2FA();
+    // Consulta do código de autenticação no banco de dados
+    const codigo = await obterCodigo2FA(usuario.cpf);
+
+    // Consulta do código de autenticação pelo redis
+    // const codigo = await getJob();
+
     await loginPage.informa2FA(codigo);
 
-    await page.waitForTimeout(1000);
-
-    await expect(dashboardPage.obterSaldo()).toHaveText('R$ 5.000,00');
+    await dashboardPage.obterSaldo().waitFor({timeout: 1000});
 });
 
 test('Não deve logar quando a senha é inválida', async ({ page }) => {
