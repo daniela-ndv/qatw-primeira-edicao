@@ -28,7 +28,7 @@ test('Deve acessar a conta do usuário', async ({ page }) => {
     const codigo = await obterCodigo2FA(usuario.cpf);
 
     // Consulta do código de autenticação pelo redis
-    // const codigo = await getJob();
+    //const codigo = await getJob();
 
     await loginPage.informa2FA(codigo);
 

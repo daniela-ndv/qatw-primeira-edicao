@@ -1,16 +1,14 @@
 # QA Tech Week - Primeira Edição
 
-Este é um repositório de estudos da QA Tech Week, um evento de aprendizado guiado por [Fernando Papito](https://fernandopapito.com.br/)!
+Este é um repositório de estudos da [QA Tech Week](https://www.youtube.com/watch?v=louKpr1KzEU&list=PLn2i8I7W73iq2QYJCet6ysRl3SkqLfXZd&index=2), um evento de aprendizado guiado por [Fernando Papito](https://fernandopapito.com.br/).
 
 Nesse evento, serão abordados conceitos e tecnologias para **testar um sistema de autenticação em uma arquitetura de microsserviços**, com a execução de testes manuais, automação de testes de regressão e integração. 
 
 ## 💻 Tecnologias utilizadas: 
 - Javascript
 - Playwright
-- Docker
-- Alure Reports
-- Slack
 - Node.js
+- Docker
 - Redis
 - PostgreSQL
 - Jenkins
