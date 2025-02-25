@@ -67,7 +67,7 @@ O projeto utiliza Docker Compose para gerenciar os serviços necessários para o
    npx playwright test --ui
    ```
 
-### 📊 Jenkins
+### 💁🏽‍♂️ Jenkins
 - Pipeline script from SCM (da configuração do repositório).
 
 ### 🐳 Baixar imagem do Playwright no Docker
@@ -75,6 +75,12 @@ Para usar uma imagem do Playwright, com browsers e dependências necessárias, c
 ```
 docker pull mcr.microsoft.com/playwright:v1.50.1-noble
 ``` 
+
+### 📊 Allure Report
+Para gerar o relatório:
+```
+npx allure serve
+```
 
 ----
 
