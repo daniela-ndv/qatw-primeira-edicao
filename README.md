@@ -75,6 +75,7 @@ Para usar uma imagem do Playwright, com browsers e dependências necessárias, c
 ```
 docker pull mcr.microsoft.com/playwright:v1.50.1-noble
 ``` 
+Para usar uma imagem compatível com o Jenkins, que requer o JDK, foi criada uma imagem nova, a partir dessa imagem do Playwright.
 
 ### 📊 Allure Report
 Para gerar o relatório:
