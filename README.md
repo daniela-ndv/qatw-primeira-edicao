@@ -12,6 +12,7 @@ Nesse evento, serão abordados conceitos e tecnologias para **testar um sistema 
 - Redis
 - PostgreSQL
 - Jenkins
+- Allure Report
 
 ### ✅ Pré-requisitos
 - Git for Windows
