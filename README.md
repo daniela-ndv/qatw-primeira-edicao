@@ -68,14 +68,14 @@ O projeto utiliza Docker Compose para gerenciar os serviços necessários para o
    ```
 
 ### 💁🏽‍♂️ Jenkins
-- Pipeline script from SCM (da configuração do repositório).
+Pipeline script from SCM (da configuração do repositório).
 
 ### 🐳 Baixar imagem do Playwright no Docker
 Para usar uma imagem do Playwright, com browsers e dependências necessárias, como agente no Jenkins.
 ```
 docker pull mcr.microsoft.com/playwright:v1.50.1-noble
 ``` 
-Para usar uma imagem compatível com o Jenkins, que requer o JDK, foi criada uma imagem nova, a partir dessa imagem do Playwright.
+Para usar uma imagem compatível com o Allure Report, que requer o JDK, foi criada uma imagem nova, a partir dessa imagem do Playwright.
 
 ### 📊 Allure Report
 Para gerar o relatório:
