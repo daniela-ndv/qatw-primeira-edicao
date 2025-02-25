@@ -67,6 +67,15 @@ O projeto utiliza Docker Compose para gerenciar os serviços necessários para o
    npx playwright test --ui
    ```
 
+### 📊 Jenkins
+- Pipeline script from SCM (da configuração do repositório).
+
+### 🐳 Baixar imagem do Playwright no Docker
+Para usar uma imagem do Playwright, com browsers e dependências necessárias, como agente no Jenkins.
+```
+docker pull mcr.microsoft.com/playwright:v1.50.1-noble
+``` 
+
 ----
 
 #### [Adaptado de github.com/ComunidadeTechQA/qatw-primeira-edicao, por Fernando Papito](https://github.com/ComunidadeTechQA/qatw-primeira-edicao?tab=readme-ov-file).
